@@ -1,0 +1,16 @@
+{
+  "name": "amp-test",
+  "version": "1.0.0",
+  "description": "Ciao",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/FabioAnsaldi/amp-test.git",
+  "author": "Fabio Ansaldi <f.ansaldi@eataly.it>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "express": "^4.16.4"
+  }
+}
