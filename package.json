@@ -1,13 +1,13 @@
 {
   "name": "amp-test",
   "version": "1.0.0",
-  "description": "Ciao",
+  "description": "Accelerated Mobile Pages test",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "repository": "https://github.com/FabioAnsaldi/amp-test.git",
-  "author": "Fabio Ansaldi <f.ansaldi@eataly.it>",
+  "author": "Fabio Ansaldi <faio.ansaldi@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.19.0",
