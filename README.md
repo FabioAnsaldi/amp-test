@@ -39,12 +39,17 @@ If you want to set a custom configuration for IP address or service port:
 
 You have to run the service with the optional parameter like below:
 ```sh
-$ npm run start -a 192.168.1.123 -p 8080
+$ yarn run start -a 192.168.1.123 -p 8080
 ```
 
 For more details of option parameters, run this comand:
 ```sh
-$ npm run start --help
+$ yarn run start --help
+```
+
+To run files watching, you have to run this command:
+```sh
+$ yarn run watching
 ```
 
 ### AMP validator

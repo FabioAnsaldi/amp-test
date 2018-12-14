@@ -1,6 +1,6 @@
 'use strict';
 
-const {series, src, dest} = require('gulp');
+const {series, src, dest, watch} = require('gulp');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify-es').default;
 const sourcemaps = require('gulp-sourcemaps');
@@ -42,4 +42,12 @@ const htmlChange = () => {
         .pipe(dest('./'));
 };
 
+const watching = () => {
+
+    watch('src/scss/*', cssMinify);
+    watch('src/js/*', jsMinify);
+    watch('src/*', htmlChange);
+};
+
+exports.watching = watching;
 exports.default = series(cssMinify, jsMinify, htmlChange);

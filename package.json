@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "gulp": "gulp"
+    "watching": "gulp watching"
   },
   "repository": "https://github.com/FabioAnsaldi/amp-test.git",
   "author": "Fabio Ansaldi <faio.ansaldi@gmail.com>",

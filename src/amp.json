@@ -19,7 +19,7 @@
     "name": "Fabio Ansaldi"
   },
   "publisher": {
-    "@type": "Person",
+    "@type": "Organization",
     "name": "⚡ Fabio Ansaldi",
     "logo": {
       "@type": "ImageObject",
