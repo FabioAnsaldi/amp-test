@@ -4,7 +4,8 @@
   "description": "Accelerated Mobile Pages test",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "gulp": "gulp"
   },
   "repository": "https://github.com/FabioAnsaldi/amp-test.git",
   "author": "Fabio Ansaldi <faio.ansaldi@gmail.com>",
@@ -15,7 +16,7 @@
   },
   "devDependencies": {
     "gulp": "^4.0.0",
-    "gulp-change": "^1.0.2",
+    "gulp-replace-string": "^0.6.1",
     "gulp-clean-css": "^4.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.4",

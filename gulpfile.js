@@ -5,7 +5,7 @@ const rename = require('gulp-rename');
 const uglify = require('gulp-uglify-es').default;
 const sourcemaps = require('gulp-sourcemaps');
 const cleanCSS = require('gulp-clean-css');
-const change = require('gulp-change');
+const replace = require('gulp-replace-string');
 const fs = require('fs');
 
 const cssMinify = () => {
@@ -28,17 +28,13 @@ const jsMinify = () => {
         .pipe(dest('js'));
 };
 
-const performChange = (content) => {
-
-    let css = fs.readFileSync('css/base.min.css').toString('utf-8');
-    return content.replace(/{{STYLE}}/g, css);
-};
-
 const htmlChange = () => {
 
-    return src('amp.html')
-        .pipe(change(performChange))
-        .pipe(dest('/'))
+    let css = fs.readFileSync('css/base.min.css').toString('utf-8');
+
+    return src('src/amp.html')
+        .pipe(replace(new RegExp('{{STYLE}}', 'g'), css))
+        .pipe(dest('./'));
 };
 
 exports.default = series(cssMinify, jsMinify, htmlChange);
