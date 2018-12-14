@@ -5,6 +5,7 @@ Accelerated Mobile Pages test
 ## Table of contents
 - [Local Setup](#local-setup)
 - [Installation](#installation)
+- [AMP validator](#validator)
 - [License](#license)
 - [Contributing](#ontributing)
 
@@ -31,7 +32,7 @@ $ yarn run start
 If the your_local_address_ip is 127.0.0.1, you will see something like below:
 
 ```sh
-listening on http://127.0.0.1:80/
+listening on http://127.0.0.1:8080/
 ```
 
 If you want to set a custom configuration for IP address or service port:
@@ -44,6 +45,17 @@ $ npm run start -a 192.168.1.123 -p 8080
 For more details of option parameters, run this comand:
 ```sh
 $ npm run start --help
+```
+
+### AMP validator
+To enable the AMP validator by adding this fragment identifier to your document URL:
+```
+#development=1
+```
+
+For example:
+```
+http://localhost:8000/amp.html#development=1
 ```
 
 ### License

@@ -12,5 +12,13 @@
   "dependencies": {
     "commander": "^2.19.0",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-change": "^1.0.2",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify-es": "^1.0.4"
   }
 }
